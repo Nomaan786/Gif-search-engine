@@ -6,6 +6,7 @@ document.querySelector(".js-go").addEventListener("click", function() {
 document.querySelector(".js-userinput").addEventListener("keyup", function(e) {
     var input = document.querySelector("input").value;
     console.log(input);
+    // 13 is keycode of keyevent
     if (e.which === 13) {
         pushToDOM(input);
     }
